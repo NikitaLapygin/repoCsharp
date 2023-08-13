@@ -1,14 +1,21 @@
 ﻿// customized greeting
 Console.Write("Write your name:");
+#nullable enable
 string? username = Console.ReadLine();
-    if (username.ToLower() == "daria" || username.ToLower() == "darya" || username.ToLower() == "dasha")
-    {
+if (username is not null)
+{
+switch (username.ToLower())
+{
+    case "daria":
+    case "darya":
+    case "dasha":
         Console.WriteLine();
         Console.WriteLine("Finally! DASHEN'KA JOINED US!");
         Console.WriteLine();
-    }
-    else 
-    {
-        Console.WriteLine ("Greetings, ");
+        break;
+    default:
+        Console.WriteLine("Greetings, ");
         Console.WriteLine(username);
-    }
+        break;
+}
+}
