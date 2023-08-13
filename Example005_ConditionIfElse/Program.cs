@@ -1,7 +1,7 @@
 ﻿// customized greeting
 Console.Write("Write your name:");
 string? username = Console.ReadLine();
-    if (username.ToLower() == "Daria" || username == "Darya" || username == "Dasha")
+    if (username.ToLower() == "daria" || username.ToLower() == "darya" || username.ToLower() == "dasha")
     {
         Console.WriteLine();
         Console.WriteLine("Finally! DASHEN'KA JOINED US!");
