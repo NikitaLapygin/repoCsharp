@@ -20,7 +20,7 @@ Console.WriteLine("+");
 //Start of the drawing
 int x=xa, y=ya;
 int count = 0;
-while (count<1000000)
+while (count<10000)
 { 
     int what = new Random().Next(0,3); //Choose a random apex of previously set triangle
     if (what == 0)
